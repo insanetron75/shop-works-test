@@ -97,7 +97,7 @@ class BonusCalculator
         return true;
     }
 
-    public function getBonusHours($shift1, $shift2)
+    private function getBonusHours($shift1, $shift2)
     {
         // check difference for bonus seconds
         $firstShiftBonusTime = $shift2['start_time']->getTimestamp() - $shift1['start_time']->getTimestamp();
